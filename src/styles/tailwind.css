@@ -1,0 +1,140 @@
+/* src/styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom CSS can go here */
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7fafc;
+}
+
+/* Utility classes for components */
+.character-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.character-card img {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.search-bar {
+    border-radius: 0.25rem;
+    border: 1px solid #cbd5e0;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #3f51b5;
+    outline: none;
+}
+
+.character-detail-card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom button styles */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3f51b5;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #ff5722;
+}
+
+.btn-accent {
+    color: #fff;
+    background-color: #e91e63;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #4caf50;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #ffc107;
+}
+
+.btn-error {
+    color: #fff;
+    background-color: #ff5252;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #2196f3;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Responsive classes */
+@media (min-width: 640px) {
+    .character-card {
+        width: 300px;
+    }
+
+    .character-detail-card {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .character-card {
+        width: 320px;
+    }
+
+    .character-detail-card {
+        max-width: 800px;
+    }
+
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
+    }
+}
